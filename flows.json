@@ -1,0 +1,22 @@
+[
+    {
+        "id": "3dd9e8d863b37014",
+        "type": "function",
+        "z": "28ebd1c820d13675",
+        "name": "function 13",
+        "func": "let isCustom = global.get(\"isCustom\");\n\nif(isCustom == 1){\n   return{\n    payload:msg.payload\n   };\n}\n\nelse if(isCustom == 0 && msg.payload == 40 ){\n   return{\n    payload:40,\n   };\n}\n\nelse if(isCustom == 0 && msg.payload == 50 ){\n   return{\n    payload:50,\n   };\n}\n\nelse if(isCustom == 0 && msg.payload == 60 ){\n   return{\n    payload:60,\n   };\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 1140,
+        "wires": [
+            [
+                "9f9222882c5d47a5"
+            ]
+        ]
+    }
+]
